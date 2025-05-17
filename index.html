@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-    <!-- 终极跳转大法：直接暴力重定向 -->
-    <meta http-equiv="refresh" content="0; url=https://www.baidu.com">
-    <!-- 防止某些浏览器抽风，再加个JavaScript跳转 -->
-    <script type="text/javascript">
-        window.location.href = "https://www.baidu.com";
-    </script>
-    <title>正在跳转网页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空空的网页</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e6f7ff; /* 浅天蓝色背景 */
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .content {
+            text-align: center;
+            font-size: 2rem;
+        }
+        .kaomoji {
+            font-size: 3rem;
+            margin-top: 1rem;
+            animation: float 3s ease-in-out infinite; /* 添加轻微浮动动画 */
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
 </head>
 <body>
-    <!-- 给实在跳不过去的兄弟留条活路 -->
-    <p>如果您的浏览器装死了，请手动<a href="https://www.baidu.com">点击这里前往</a></p>
+    <div class="content">
+        这里什么也没有，过一段时间再来看看吧
+        <div class="kaomoji"> (´･ω･`) </div> <!-- 换了个更开心的颜文字 -->
+    </div>
 </body>
 </html>
