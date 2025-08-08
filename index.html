@@ -3,37 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>空空的网页</title>
+    <title>我的网站</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: #e6f7ff; /* 浅天蓝色背景 */
+            padding: 0;
             font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
             color: #333;
         }
-        .content {
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
             text-align: center;
-            font-size: 2rem;
         }
-        .kaomoji {
-            font-size: 3rem;
-            margin-top: 1rem;
-            animation: float 3s ease-in-out infinite; /* 添加轻微浮动动画 */
+        
+        h1 {
+            color: #2c3e50;
         }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+        
+        .empty-message {
+            margin-top: 50px;
+            font-size: 18px;
+            color: #7f8c8d;
         }
     </style>
 </head>
 <body>
-    <div class="content">
-        这里什么也没有，过一段时间再来看看吧
-        <div class="kaomoji"> (´･ω･`) </div> <!-- 换了个更开心的颜文字 -->
+    <div class="container">
+        <h1>欢迎来到我的网站</h1>
+        <div class="empty-message">
+            <p>这里目前是空白的，但充满可能性...</p>
+            <p>🌱 就像一片等待播种的田地 🌱</p>
+        </div>
     </div>
 </body>
 </html>
