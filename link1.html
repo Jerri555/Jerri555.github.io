@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>下载文件</title>
+    <meta http-equiv="refresh" content="5;url=https://limewire.com/d/igwfg#XHZE45BUAa">
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; }
+        .countdown { font-size: 48px; color: #4CAF50; margin: 20px; }
+        .btn { background: #4CAF50; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>正在跳转到下载页面...</h1>
+    <div class="countdown" id="countdown">5</div>
+    <p>如果页面没有自动跳转，请点击：</p>
+    <a class="btn" href="https://limewire.com/d/igwfg#XHZE45BUAa">立即下载</a>
+    
+    <script>
+        let time = 5;
+        setInterval(() => {
+            time--;
+            document.getElementById('countdown').textContent = time;
+            if(time <= 0) window.location.href = "https://limewire.com/d/igwfg#XHZE45BUAa";
+        }, 1000);
+    </script>
+</body>
+</html>
